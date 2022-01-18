@@ -27,3 +27,6 @@ class Transaction:
 
     def __str__(self):
         return str(self.toJson())
+
+    def __eq__(self, other):
+        return self.id == other.id
