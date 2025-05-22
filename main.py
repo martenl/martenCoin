@@ -23,6 +23,7 @@ if __name__ == '__main__':
     # print(txPool.transactionExists(transaction))
     # signature = transaction.signature
 
+
     myBlock = wallet.create_block([transaction, transaction2], 'last hash', 1)
 
     pprint.pprint(myBlock.toJson())

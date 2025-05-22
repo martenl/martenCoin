@@ -32,3 +32,6 @@ class Block:
 
     def sign(self, signature):
         self.signature = signature
+
+    def __eq__(self, other):
+        return self.toJson() == other.toJson()
